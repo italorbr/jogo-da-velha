@@ -1,5 +1,7 @@
 * {
   font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -23,13 +25,14 @@ p {
 .tabuleiro {
   display: flex;
 
-  width: 340px;
+  width: 318px;
 
   flex-wrap: wrap;
 
   margin: 10px;
 
   opacity: 1;
+  
 }
 
 .tabuleiro.fimDeJogo {
@@ -41,7 +44,7 @@ p {
   height: 100px;
   margin: 3px;
 
-  background-color: #fff;
+  background-color: #dddada;
   color: #fff;
 
   display: flex;
@@ -62,10 +65,10 @@ p {
 }
 
 .btn {
-  color: #264653;
+  color: #fff;
   border-radius: 5px;
   height: 30px;
-  background-color: #fce8a5;
+  background-color: #333129;
   font-size: 16px;
 }
 
@@ -84,4 +87,19 @@ h1 {
 
 .ganhador.X {
   color: #e78f51;
+}
+
+.placar {
+  background-color: #adadac;
+  width: 290px;
+  margin-right: 0;
+  border: 1px solid #5f5e5e;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.placarTittle {
+  font-size: 40px;
+  text-align: center;
+  
 }

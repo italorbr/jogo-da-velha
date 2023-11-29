@@ -67,7 +67,8 @@ function App() {
     setJogada({});
     setVencedor(null);
     setEmpate(null);
-    if (vencedor || empate === true) {
+
+    if (fimDeJogo) {
       if (vencedor === "O") {
         setScoreO(scoreO+1);
       } else if (vencedor === "X"){
@@ -95,17 +96,16 @@ function App() {
 
   return (
     <div className='container'>
-      {vencedor && <h1 className={`ganhador ${vencedor === "O" ? "O" : "X"}`}>{vencedor} ganhou!</h1>}
-
-
+      
     <div className='placar'>
-      <p>Placar</p>
+      <p className='placarTittle'>Placar</p>
       <p>X: {scoreX}</p>
       <p>O: {scoreO}</p>
       <p>Empates: {draw}</p>
     </div>
       {!fimDeJogo && <p className='vez'>É a vez de {turno}</p>}
 
+      {vencedor && <h1 className={`ganhador ${vencedor === "O" ? "O" : "X"}`}>{vencedor} ganhou!</h1>}
       {empate && <h1>Empate!</h1>}
 
       <div className={`tabuleiro ${fimDeJogo ? "fimDeJogo" : null}`} >
