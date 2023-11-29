@@ -1,0 +1,87 @@
+* {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #d3d3d3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #264653;
+}
+
+.tabuleiro {
+  display: flex;
+
+  width: 340px;
+
+  flex-wrap: wrap;
+
+  margin: 10px;
+
+  opacity: 1;
+}
+
+.tabuleiro.fimDeJogo {
+  opacity: 0.4;
+}
+
+.celulas {
+  width: 100px;
+  height: 100px;
+  margin: 3px;
+
+  background-color: #fff;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+.celulas.O {
+  background-color: #2a9d8f;
+}
+
+.celulas.X {
+  background-color: #e78f51;
+}
+
+.btn {
+  color: #264653;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #fce8a5;
+  font-size: 16px;
+}
+
+.vez {
+  font-size: 30px;
+  font-weight: 550;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+.ganhador.O {
+  color: #2a9d8f;
+}
+
+.ganhador.X {
+  color: #e78f51;
+}
