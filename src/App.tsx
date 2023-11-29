@@ -3,6 +3,8 @@ import './App.css';
 
 function App() {
 
+  document.title = 'Jogo da velha';
+
   type Jogador = "O" | "X";
 
   const [turno, setTurno] = useState<Jogador>("O"); //turno eh o valor de jogador e comeca como "O" 
